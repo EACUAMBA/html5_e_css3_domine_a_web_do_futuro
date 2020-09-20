@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-pt">
+	<head>
+		<title>6.5 - crie-a-sua-propria-janela-modal</title>
+		<style>
+		body{
+		padding:0;
+		margin: 0;
+		}
+		.title{
+			width: 100%;
+			margin: 0 auto;
+			display: block;
+			background: linear-gradient(to right, aliceblue, aqua);
+			padding: 10px 0px;
+			font-family: "Gilroy ExtraBold", sans-serif;
+			text-shadow: 2px 2px 3px rgba(0,0,0,0.25);
+			box-shadow: inset 0px 0px 5px rgba(0,0,0,0.25);
+			font-size: 1.5em;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		
+		.notice{
+			background: white;
+			border: 1px solid black;
+			height: 180px;
+			padding: 10px;
+			width: 380px;
+			
+			
+		
+			/*posicionando no centro da pagina o position*/
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			
+			/*acertando a posicao, já que a medição começa no 50%, temos que subtrair a metado do elemento.*/ 
+			margin: -90px 0px 0px -250px;
+			
+			
+			z-index: 1;
+		}
+		/*fundo com efeito de profundidade para o modal*/
+			.overlay{
+				display: block;
+				position: fixed;
+				top: 0;
+				left: 0;
+				
+				background-color: rgba(0, 0, 0, 0.4);
+				
+				width: 100%;
+				height: 100%;
+				
+			}
+			a{
+				opacity: 0.8;
+			}
+			a:hover{
+				opacity: 1;
+			}
+			
+			.notice, .overlay{
+				display: none;
+			}
+			
+			
+		</style>
+		
+		
+	</head>
+	<body>
+		<div class="title">
+			<section>
+				6.5 -  Crie a sua própria janela modal
+			</section>
+			
+			
+		</div>
+		
+		
+		<div style="text-align: center">
+			<a href="javascript:;" onclick="show();" style="padding: 5px 10px; background: aqua;">Abrir Modal</a>
+			</div>
+		
+		
+		
+			<div class="notice"  style="text-align: center" onclick="exit();">
+			<h1>Atenção</h1>
+			<p>Aqui você pode exibir alguma mensagem importante, que ela irá
+sobrepor todo o conteúdo do seu site.</p>
+<br>
+<a href="javascript:;" style="padding: 5px 10px; background: red;" onclick="exit();">Fechar Modal</a>
+		</div>
+		
+		<div class="overlay" onclick="exit();"></div>
+		
+		<script>
+				let overlay = document.getElementsByClassName("overlay");
+				let notice = document.getElementsByClassName("notice");
+				
+				
+				
+				function exit(){
+						notice[0].style.display = "none";
+						overlay[0].style.display = "none";
+						
+				}
+				function show(){
+						overlay[0].style.display = "block";
+						notice[0].style.display = "block";
+				}
+		</script>
+	</body>
+</html>	

@@ -3,11 +3,42 @@
 	<head>
 		<title>6.4 - compreenda-o-uso-do-position</title>
 		<style>
+		body{
+		padding:0;
+		margin: 0;
+		}
 		.title{
 			width: 100%;
+			margin: 0 auto;
 			display: block;
-			background: linear-gradient(to right, aliceblue, gray);
+			background: linear-gradient(to right, aliceblue, aqua);
+			padding: 10px 0px;
+			font-family: "Gilroy ExtraBold", sans-serif;
+			text-shadow: 2px 2px 3px rgba(0,0,0,0.25);
+			box-shadow: inset 0px 0px 5px rgba(0,0,0,0.25);
+			font-size: 1.5em;
+			margin-bottom: 20px;
 		}
+		
+		.box{
+			background: PapayaWhip;
+			width: 150px;
+			height: 150px;
+			position: relative;
+			top: 50px;
+			left: 50px;
+		}
+		
+		.box-absolute{
+			background: darkcyan;
+			width: 150px;
+			height: 150px;
+			position: absolute;
+			top: 100px;
+			left: 900px;
+			color: white;
+		}
+		
 		
 		</style>
 	</head>
@@ -17,5 +48,21 @@
 				<h1>Compreenda o uso do position</h1>
 			</section>
 		</center>
+		<div class="box">
+			Esta é uma caixa com position relative!
+		</div>
+		Um texto sobre HTML5 e CSS3 que fizemos na nossa dissertação.
+		<div class="box-absolute">
+			Esta é uma caixa com position absolute!
+		</div>
+		<section style="position: relative;">
+		<div class="box-absolute">
+			Esta é uma caixa com position absolute! Dentro de um elemento com position: relative;
+		</div>
+		</section>
+		<hr>
+		<br>
+
+		
 	</body>
 </html>	

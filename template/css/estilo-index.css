@@ -1,0 +1,29 @@
+body{font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; line-height:1.6;/*significa que sera 160% da fonte*/ background: #FFF1D6 url('../img/noise.png');}
+.container{margin: 0 auto; width: 960px; }
+.clear{clear: both;}
+/*Titulo*/
+h1 a{color: #7E9F19; text-decoration: none;}
+h1 a:hover{background: #7E9F19; color: #fff;}
+.container>h1{
+	text-align: center;
+}
+
+/*Place*/
+section{float: left; width: 660px}
+article{background-color: #fff; border: 10px solid #ccc; border-color: #CCC #999 #999 #CCC; margin-bottom: 20px; padding: 10px;}
+article h2{border-bottom: 1px dashed #7E9F19; margin: 0;}
+article a{color: #2C88A7; font-weight: bold;}
+article a:visited{color: #3d3a57; font-weight: bold; }
+article a:active{color: red; font-weight: bold; }
+article img{border: 1px solid #7E9F19; float: left; margin: 10px 10px 0 0; padding: 2px;}
+
+/*sidenote*/
+aside.sidenote{background-color: #FFFBE4; border: 1px solid #C9BC8F; padding: 10px; float: right; width: 260px;}
+aside.sidenote h3{font-size: 14px; margin-top: 0;}
+aside.sidenote ol{font-size: 12px;}
+
+/*rodape foot*/
+footer.footer{font-size: 12px; text-align: center;}
+
+
+

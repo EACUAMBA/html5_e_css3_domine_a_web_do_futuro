@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-pt">
+	<head>
+		<title>Crando conteudo atraves de CSS</title>
+		<style>
+			.tip::before{content:"\261E";margin-right:10px; font-size: 50px;}.tip{font-size: 50px;}
+			blockquote{color: #444; font-style: italic; font-size: 40px;}
+			blockquote::before, blockquote:after{color: #000; font-size: 70px; !important}
+			blockquote::before{ content: "\201C"; }
+			blockquote:after{ content: "\201d"; }
+		</style>
+	</head>
+	<body>
+		<center>
+			<section>
+				<p class="tip">Você sabia que...</p>
+				<blockquote>O problema da internet é que esta cheia de fake news! isso é demais.</blockquote>
+			</section>
+		</center>
+	</body>
+</html>		

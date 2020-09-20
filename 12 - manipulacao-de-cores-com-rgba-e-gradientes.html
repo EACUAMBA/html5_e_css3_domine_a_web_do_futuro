@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-pt">
+	<head>
+		<title>Manipulação de cores com RGA e Gradiente</title>
+		<style>
+			@face-font{
+				font-family: "Gilroy Light";
+				src: url('auxiliar-files/Gilroy-Light.woff')format('woff');
+			}
+			*{
+				font-family: "Gilroy Light", sans-serif;
+			}
+			
+			figure{
+				position: relative;
+				width: 500px;
+				text-align: center;
+			}
+			img{
+				display: block;
+			}
+			figcaption{
+				position: absolute;
+				bottom: 5px;
+				width: 490px;
+				margin: 0 5px;
+				padding: 10px 0 10px 0;
+				font-size: 1.3rem;
+				background-color: #000;
+				background-color: rgba(0,0,0,0.7);
+				color: #fff;
+			}
+			
+			ol{
+			display: inline-block;
+				list-style: none;
+				height: 35px;
+				padding: 0;
+				
+				background-color: #da6;
+				color: white;
+				
+				border: 1px solid rgba(0,0,0,0.3);
+				
+				
+			}
+			li{
+				line-height: 35px;
+				float: left;
+				text-align: center;
+				width: 100px;
+				
+				border: 1px solid rgba(255, 255, 255, 0.3);
+				border: 1px solid rgba(0, 0, 0, 0.3);
+			}
+			
+			li:first-child{
+				border-left: none;
+			}
+			
+			
+			li:last-child{
+				border-right: none;
+			}
+			
+			
+			div{
+				display: inline-block;
+				border: 2px solid rgba(0,0,0,0.5);
+				height: 50px;
+				margin-bottom: 10px;
+				text-align: center;
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			.blue{
+				background-color: #4377FA;
+				background-image: linear-gradient(to top, #4377FA, #0537B7);
+				
+			}
+			
+			.reverse-blue{
+			background-color: #0537B7;
+				background-image: linear-gradient(to top, #0537B7, #4377FA);
+			}
+			
+			.omg-pink{
+			background-color: #FC0050;
+				background-image: linear-gradient(to top right, #FC0050, #FF79A3);
+			}
+			
+			.stops{
+			background-color: #F5B951;
+				background-image: linear-gradient(to top, #F5B951 25%, #F2A31C 75%);
+			}
+			
+			.my-own{
+			background-image: linear-gradient(to right, #FF8C00 , #E9967A  , #FF1493 , #228B22);
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<section>
+				<figure>
+					<img src="auxiliar-files/ggb.jpg" alt="Golden Gate Bridge Image" style="width: 500px">
+					<figcaption>
+						San Francisco, Califórnia
+						<small>
+							Por Salim Virji (http://www.flickr.com/photos/salim/402618628/)
+						</small>
+					</figcaption>
+				</figure>
+			</section>
+		</center>
+		<br>
+		<hr>
+		<br>
+		<center>
+			<section>
+				<ol>
+					<li>Ana</li>
+					<li>Bianca</li>
+					<li>Cacilda</li>
+					<li>Dinalva</li>
+				</ol>
+			</section>
+		</center>
+		<br>
+		<hr>
+		<br>
+		
+			<section>
+				<div class="blue">
+					Um gradiente azul clássico, utilizando 2 tons similares.
+				</div>
+				<br>
+				<div class="reverse-blue">
+					Uma versão inversa do gradiente azul.
+				</div>
+				<br>
+				<div class="omg-pink">
+					Combinando "top" e "right" para a direção.
+				</div>
+				<br>
+				<div class="stops">
+					Utilizando posições específicas para as cores.
+				</div>
+				<br>
+				<div class="my-own">
+					Meu gradiente!
+				</div>
+			</section>
+	
+	</body>
+</html>		

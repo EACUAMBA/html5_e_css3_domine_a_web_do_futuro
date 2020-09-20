@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-pt">
+	<head>
+		<title>9 - Substituição de ícones por fontes</title>
+		<style>
+			@font-face{
+			font-family: "iconicFill";
+			src: url("auxiliar-fonts/iconic_fill.woff")format("woff");
+			font-weight: normal;
+			font-style: normal;
+			}
+			section{
+			font-family: "Arial";
+			}
+			.icon-next::after{
+			content: "\2192";
+			font-family: "iconicFill";
+			margin-left: 10px;
+			}
+			h1.icon-next{
+			color: blue;
+			}
+			h2.icon-ok{
+			color: #469D00;
+			}
+			h2.icon-ok::before{
+			content: "\2714";
+			font-family: "iconicFill";
+			margin-right: 10px;
+			}
+			
+			h2.icon-invalid{
+			color: #fc0903;
+			}
+			h2.icon-invalid:before{
+				content: "\2718";
+				font-family: "iconicFill";
+				margin-right: 10px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<center>
+			<section>
+				<h1 class="icon-next">Avançar</h1>
+				<h3 class="icon-next" style="font-size: 0.8em;">Clique aqui para avançar</h3>
+			</section>
+		</center>
+		<center>
+			<section>
+				<h2 class="icon-ok">Todos os dados foram inseridos com secesso! pode prosseguir.</h2>
+				<h2 class="icon-invalid">Por favor preste atenção ao inserir dados no formúlario.</h2>
+			</section>
+		</center>
+	</body>
+</html>		

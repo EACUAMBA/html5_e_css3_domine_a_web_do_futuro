@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-pt">
+	<head>
+		<title>5.7 - Conbinando Tudo</title>
+		<style>
+			@font-face{
+				font-family: "Gilroy Light";
+				src: url('auxiliar-files/Gilroy-Light.woff')format('woff');
+			}
+			@font-face{
+				font-family: "IconicFill";
+				src: url('auxiliar-files/iconic_fill.woff')format('woff');
+				font-style: normal;
+				font-weight: normal;
+			}
+			*{
+				font-family: "Gilroy Light", sans-serif;
+			}
+			
+			body{
+			 display: flex;
+			 align-items: center;
+			 justify-content: center;
+			 height: 500px;
+			}
+			
+			.livro h1{
+				color: #BD2C00;
+				font-size: 1.2em;
+				margin: 0;
+			}
+			
+			.livro h2{
+				font-size: 1em;
+				margin: 5px 0;
+			}
+			
+			.livro .available{
+				background-color: #6CC644;
+				border-radius: 3px;
+				color: white;
+				font-size: 0.8em;
+				font-weight: bold;
+				padding: 3px 7px;
+				text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+			}
+			
+			.livro ul{
+				background-color: #56B4EF;
+				background-image: linear-gradient(to top , #56B4EF, #148EDA);
+				float: left;
+				list-style: none;
+				margin: 10px 10px 0 0;
+				padding: 0;
+				width: 230px;
+			}
+			
+			.livro ul .icon::before{
+				font-family: "IconicFill";
+				margin: 0 5px;
+			}
+			.livro ul .paper::before{
+				content: "\e00b";
+			}
+			.livro ul .digital::before{
+				content: '\e044';
+			}
+			.livro ul .package::before{
+				content: "\e022";
+			}
+			
+			
+			.livro ul .icon{
+				display: block;
+				color: #fff;
+				font-size: 0.9em;
+				font-weight: bold;
+				padding: 5px;
+				text-decoration: none;
+				text-shadow: 0 1px 0 (0,0,0,0.9);
+			}
+			
+			.livro ul .icon{
+				border-bottom: 1px solid rgba(0,0,0,0.3);
+				border-top: 1px solid rgba(255, 255, 255, 0.3); 
+			}
+			
+			.livro ul .icon:hover{
+				background-color: rgba(0,0,0,0.1); 
+				box-shadow: inset 0px 0px 2px rgba(0,0,0,0.1);
+			}
+			
+			.livro ul .paper{
+				border-top: none;
+			}
+			
+			.livro ul .package{
+				border-bottom: none;
+			}
+			
+			
+			.livro ul{
+				border-radius: 5px;
+				border: 1px solid rgba(0,0,0,0.3);
+			}
+			
+			
+			.livro{
+				background-color: #fafafa;
+				background-image: linear-gradient(#fafafa, #eee);
+				border-radius: 5px;
+				border: 1px solid #ccc;
+				padding: 10px;
+				width: 600px;
+			}
+			
+			.clear{
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+			<article class="livro">
+				<header>
+					<h1>Ruby on Rails: coloque sua aplicação web nos trilhos</h1>
+					<h2>Vinicius Baggio</h2>
+					<span class="available">Disponível</span>
+				</header>
+				<div class="clear"></div>
+				
+					<ul>
+						<li><a href="#" class="icon paper">Comprar versão fisíca</a></li>
+						<li><a href="#" class="icon digital">Comprar versão digital</a></li>
+						<li><a href="#" class="icon package">Comprar o pacote completo</a></li>
+					</ul>
+					<p>Uma ótima leitura para iniciantes afim de se aventurar no ecossistema
+de Ruby.</p>
+				
+			</article>
+	</body>
+</html>		

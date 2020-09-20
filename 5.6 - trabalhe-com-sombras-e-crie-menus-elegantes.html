@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-pt">
+	<head>
+		<title>5.6 - Trabalhe Com Sombras e Crie Menus Elegantes</title>
+		<style>
+			@font-face{
+				font-family: "Gilroy Light";
+				src: url('auxiliar-files/Gilroy-Light.woff')format('woff');
+			}
+			*{
+				font-family: "Gilroy Light", sans-serif;
+			}
+			*{
+			box-sizing: border-box;
+			margin: 0;
+			}
+			.warning{
+			margin-top: 100px;
+			padding:5px;
+			width: 300px;
+			position: relative;
+			border: 1px solid #EEE8AA;
+			background-color: #FFFACD;
+			font-size: 0.8em;
+			
+			/* Adição das SOMBRAS box-shadow: eixo-x eixo-y tamanho color*/
+			box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+			
+			}
+			.warning::before{
+			position: absolute;
+			content: "";
+			top: 50%;
+			left: -30px;
+			border-color: transparent #EEE8AA transparent transparent;
+			border-style: solid;
+			border-width: 15px;
+			margin-top: -15px;
+			}
+			
+			.search-input{
+				border: 1px solid #4169E1;
+				box-shadow: 2px 2px 2px rgba(0,0,0,0.25) inset;
+				padding: 5px 10px;
+				border-radius: 10px;
+				
+			}
+			.search-input:focus{
+				border-color: #4682B4;
+				box-shadow: 0 0 5px #4682B4 , 2px 2px 2px rgba(0,0,0,0.25) inset;
+				outline: none;
+			}
+			
+			.nav{
+				text-align: center;
+				list-style: none;
+				background-color: #B9522D;
+				display: inline-block;
+			}
+			
+			.nav li{
+				display: inline-block;
+				font-weight: bold;
+				line-height: 30px;
+				text-align: center;
+				min-width: 100px;
+				padding: 10px 40px;;
+				
+			}
+			
+			.nav a{
+			color: white;
+			}
+			.nav .active{
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.3) inset;
+			}
+			
+			
+			/*Text Shadow*/
+			.htmlAndCss{
+				display: inline-block; padding: 30px; background-color: #1E90FF; color: #fff; font-family: 'Arial', sans-serif; font-weight: bold;
+			}
+			
+			.htmlAndCss h1{
+				text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3); font-family: 'Arial', sans-serif; font-weight: bold;
+			}
+			
+			/*2 Text-shadow*/
+			.status{
+				display: inline-block;
+				font-weight: bold;
+				padding: 7px 10px;
+				font-size: 2rem;
+				color: #fff;
+				text-shadow: 1px 4px 5px rgba(0,0,0,0.5);
+			}
+			
+			.failed{
+				background-color: red;
+			}
+			
+			.shipped{
+				background-color: #7FFF00;
+			}
+			
+			.processing{
+				background-color: #FF8C00;
+			}
+		</style>
+	</head>
+	<body>
+	<br>
+	<br>
+	<center>
+			<section style="box-shadow: 0px 0px 5px rgba(0,0,0,0.5); width: 1000px;">
+			
+				<h3>5.6 - Trabalhe Com Sombras e Crie Menus Elegantes</h3>
+			</section>
+		</center>
+	<br>
+	<br>
+		<center>
+			<section>
+				<p>Faça a sua pesquisa: <input class="search-input" type="text" style="width: 300px;" placeholder="Digite aqui a sua pesquisa!"></p>
+			</section>
+		</center>
+		<br>
+	<br>
+		
+			
+				<ul class="nav">
+					<li ><a href="#">Home</a></li>
+					<li class="active"><a href="#">Serviços</a></li>
+					<li ><a href="#">Contactos</a></li>
+				</ul>
+			
+		
+		<center>
+			<section>
+				<p class="warning">Preencha com atenção este campo ele será usado para uma futura contactação a você.</p>
+			</section>
+		</center>
+		
+		<br>
+	<br>
+	<center>
+			<section style="box-shadow: 0px 0px 5px rgba(0,0,0,0.5); width: 1000px; padding: 10px 0 5px 0;">
+			
+				<h3>5.6 - Trabalhe Com Sombras e Crie Menus Elegantes</h3>
+				
+				<h4>Trabalhe com </h4>
+			</section>
+	</center>
+	<br>
+	<br>
+	
+	<center>
+			<section class="htmlAndCss">
+				<h1>HTML & CSS</h1>
+			</section>
+	</center>
+	<br>
+	<br>
+	<center>
+		<section>
+			<span class="status failed">Pagamento Recusado</span>
+			<span class="status shipped">Produto Enviado</span>
+			<span class="status processing">Em Aprovação</span>
+		</section>
+	</center>
+	
+	
+	
+	
+	
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	</body>
+</html>		

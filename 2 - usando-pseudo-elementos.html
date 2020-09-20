@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-pt">
+	<head>
+		<title>Usando Pseudo Elementos</title>
+		<style>
+			section{
+			border: 1px solid #000;
+			width: 400px;
+			height: 100px;
+			margin: 100px auto;
+			}
+			
+			h1{
+				width: 420px;
+				color: #fff;
+				background-color: lightpink;
+				position: relative;
+				left: -10px;
+			}
+			h1::before{
+			position: absolute;
+			border-color: transparent lightcoral lightcoral transparent;
+			border-style: solid;
+			border-width: 5px;
+			top: -10px;
+			content: "";
+			left: 0;
+			}
+			h1::after{
+				position: absolute;
+				top: -10px;
+				right: 0;
+				content:"";
+				border-color: transparent transparent lightcoral lightcoral;
+				border-style: solid;
+				border-width: 5px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<section>
+				<h1>Um exemplo de pseudo elementos</h1>
+			</section>
+		</center>
+	</body>
+</html>		

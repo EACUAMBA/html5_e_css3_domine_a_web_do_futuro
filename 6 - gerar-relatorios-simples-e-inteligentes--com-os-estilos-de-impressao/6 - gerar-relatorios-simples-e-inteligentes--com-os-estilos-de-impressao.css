@@ -1,0 +1,24 @@
+.fundo{
+	height: 200px;
+	width: 100%;
+	background: url("6 - gerar-relatorios-simples-e-inteligentes--com-os-estilos-de-impressao/3.png");
+	border: 10px solid red;
+	box-shadow: 10px 10px 10px;
+	color: blue;
+}
+h1{color: blue; text-shadow: 20px 20px 20px;}
+@media print{
+	*{
+		background: transparent !important; /*O google chrome aplica isto automaticament;*/
+		color: #000 !important;
+	border: transparent !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+	
+	}
+	
+	
+	a{text-decoration: overline !important;}
+	a[href]:after{content: "Link é (" attr(href)")"}
+	a[href^="#"]:after, a[href^="javascript:"]:after{content: ""}
+}

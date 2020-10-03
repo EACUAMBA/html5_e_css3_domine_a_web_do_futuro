@@ -83,18 +83,6 @@
 				
 				background-color: #E8E8E8;
 			}
-			
-			.clearfix::after, .clearfix::before{
-				content: "";
-				display: table;
-			}
-			
-			.clearfix::after{
-				clear:both;
-			}
-			.clearfix{
-				*zoom: 1;
-			}
 		</style>
 	</head>
 	<body>
@@ -145,9 +133,9 @@
 		<hr>
 		<br>
 		<div class="clear"></div>
-		<div class="page clearfix">
+		<div class="page">
 		
-			<section class="post ">
+			<section class="post">
 				<article>
 					<h1><a href="#">Título do post #1</a></h1>
 					<span class="timestamp">3 semanas atrás</span>
@@ -171,9 +159,8 @@
 						<li><a href="#" >Post #6</a></li>
 					</ol>
 				</aside>
-				
 		</div>
-		
+		<div class="clear"></div>
 		<br><br>
 		<br><br>
 		<br><br>

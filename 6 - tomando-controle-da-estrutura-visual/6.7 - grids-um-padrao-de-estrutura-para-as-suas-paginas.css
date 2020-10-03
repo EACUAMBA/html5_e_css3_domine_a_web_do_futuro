@@ -1,0 +1,27 @@
+.title{
+	background: linear-gradient(to right, aliceblue, aqua);
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+}
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+.column{
+	width: 50px;
+	margin: 0 10px;
+	background-color: aliceblue;
+}
+
+.six-column{
+	
+}
+
+.three-column{
+	
+}
+
+

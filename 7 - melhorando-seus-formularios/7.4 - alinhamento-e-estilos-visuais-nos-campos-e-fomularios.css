@@ -1,0 +1,22 @@
+label{
+	display: inline-block;
+	font-size: 0.9em;
+	width: 90px;
+	font-weight: bold;
+}
+
+input, textarea{
+	display: inline-block;
+	width: 200px;
+	
+	/*Mudando as bordas dos inputs e textarea*/
+	border: 1px solid #CCC;
+	box-shadow: inset 2px 2px 2px #EEE;
+	font-weight: 0.9em;
+	padding: 2px 9px;
+}
+
+textarea{
+	height: 100px;
+}
+

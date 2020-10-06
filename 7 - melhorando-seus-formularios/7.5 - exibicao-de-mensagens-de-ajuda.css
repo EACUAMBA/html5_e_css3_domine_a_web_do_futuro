@@ -1,0 +1,42 @@
+label{
+	display: inline-block;
+	font-size: 0.9em;
+	width: 90px;
+	font-weight: bold;
+}
+
+input, textarea{
+	display: inline-block;
+	width: 200px;
+	
+	/*Mudando as bordas dos inputs e textarea*/
+	border: 1px solid #CCC;
+	box-shadow: inset 2px 2px 2px #EEE;
+	font-weight: 0.9em;
+	padding: 2px 9px;
+}
+
+textarea{
+	height: 100px;
+}
+
+/*Dando vida a mensagem*/
+.hint{
+	background-color: #FFFBE4;
+	border-radius: 3px;
+	border: 1px solid #CCC;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+	display: none;
+	font-size: 0.8em;
+	margin-left: 20px;
+	padding: 3px;
+}
+
+
+/* Fazendo as mensagens desaparecerem conforme você diita no campo.
+	* O seletor "+"  lê se da segunte maneira: Coloque display: inline-block(no nosso caso) ao elemento .hint que esta logo apos omelemento input(ou text area ) com foco nele.
+*/
+input:focus + .hint, textarea:focus + .hint{
+	display: inline-block;
+}
+

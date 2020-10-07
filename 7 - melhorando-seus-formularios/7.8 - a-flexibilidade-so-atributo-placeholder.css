@@ -1,0 +1,77 @@
+*{
+	padding: 0;
+	margin: 0;
+	outlne:none;
+}
+
+label{
+	display: none;
+}
+
+input{
+	display: block;
+	
+	border-radius: 10px 10px 10px 10px;
+	border: 1px solid #999;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+	font-size: 0.8em;
+	padding: 15px;
+	
+}
+/*
+input[type='password']{
+	border-radius:0 0 10px 10px;
+	border-top: none;
+}*/
+
+
+
+button{
+	margin-top: 5px;
+}
+
+
+input::-webkit-input-placeholder{
+	color: red;
+}
+input:-moz-placeholder{
+	color: red;
+}
+input:-ms-input-placeholder{
+	color: red;
+}
+
+.no-placeholder label{
+	display: block;
+	color: white;
+	font-size: 1.5em;
+	text-align: left;
+}
+
+
+body{
+	width: 85%;
+	margin: 0 auto;
+		background-image: linear-gradient(to right, red, blue);
+	
+}
+
+form{
+	padding: 20px;
+}
+
+form h2{
+	color: white;
+	font-family: sans-serif;
+}
+
+.w100{
+	width: 100%;
+	margin: 10px;
+	padding: 15px;
+	text-align: center;
+}
+.w100 input{
+	width: 90%;
+}
+	

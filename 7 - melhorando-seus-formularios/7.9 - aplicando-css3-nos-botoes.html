@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+	<head>
+		<meta charset="UTF-8">
+		<title>7.9 - aplicando-css3-nos-botoes</title>
+		<link rel="stylesheet" type="text/css" href="7.9 - aplicando-css3-nos-botoes.css">
+		
+	</head>
+	
+	<body onload="checkPlaceholderSupports();" id="body">
+		<form method="" action="">
+			<div id="emailField">
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" oninput="showEmailError();"  autofocus>
+				<span class="hint">Por exemplo, seunome@dominio.com.</span>
+				<span class="error">Preencha o seu e-mail corretamente.</span>
+			</div>
+			
+			<div id="subjectField">
+				<label for="subject">Assunto:</label>
+				<input type="text" id="subject" name="subject" oninput="showSubjectError();">
+				<span class="hint">Nos diga qual é o seu problema ou ideia.</span>
+				<span class="error">Não exceda 100 caracteres.</span>
+			</div>
+			
+			<div id="contentField">
+				<label for="content">Mensagem:</label>
+				<textarea id="content" name="content" oninput="showContentError();"></textarea>
+				<span class="hint">Escreva a sua mensagem, em até 250 caracteres.</span>
+				<span class="error">Reduza o número de letras ao permitido. Não exceda 250 caracteres.</span>
+			</div>
+			<button id="content">Enviar mensagem</button>
+		</form>
+		
+		<div id="container">
+		<section id="login-form">
+			
+			<form method="" action="">
+				
+				<div class="w100">
+					<h2>Bem vindo de volta!</h2>
+				</div>
+				
+				<div class="w100">
+					<label for="username">Username:</label>
+					<input type="text" name="username" id="username" placeholder="Usuário">
+				</div>
+				<div class="w100">
+					<label for="password">Password</label>
+					<input type="password" name="password" id="password" placeholder="Password">
+				</div>
+				<div class="w100">
+					<button>Entrar no site</button>
+				</div>
+				
+			</form>
+			
+		</section>
+		</div>
+		
+		<script type="text/javascript" src="7.9 - aplicando-css3-nos-botoes.js"></script>
+	</body>
+</html>

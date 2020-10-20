@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-pt">
+	<head>
+		<meta charset="UTF-8">
+		<title>8.4 - transicoes-na-galeria-de-fotos</title>
+		<link href="8.4 - transicoes-na-galeria-de-fotos.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<section id="fotos" class="clearfix" style="margin-bottom: 20px">
+			<h1>Reforços da Plataformatec em 2012</h1>
+			
+			<ul>
+				<li>
+					<img src="8.4 - transicoes-na-galeria-de-fotos/galdino.png" alt="foto do galdino">
+					<span>Carlos Galdino</span>
+				</li>
+				
+				<li>
+					<img src="8.4 - transicoes-na-galeria-de-fotos/kist.png" alt="foto do kist">
+					<span>Erich Kist</span>
+				</li>
+				
+				<li>
+					<img src="8.4 - transicoes-na-galeria-de-fotos/mazza.png" alt="foto do mazza">
+					<span>Lucas Mazza</span>
+				</li>
+				
+				<li>
+					<img src="8.4 - transicoes-na-galeria-de-fotos/sousa.png" alt="foto do sousa">
+					<span>Rondy Sousa</span>
+				</li>
+				
+			</ul>
+			
+		</section>
+		
+		<div id="formulario" class="clearfix"> 
+			
+			<form method="" action="">
+				<div id="emailField">
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" oninput="showEmailError();"  autofocus>
+					<span class="hint">Por exemplo, seunome@dominio.com.</span>
+					<span class="error">Preencha o seu e-mail corretamente.</span>
+				</div>
+				
+				<div id="subjectField">
+					<label for="subject">Assunto:</label>
+					<input type="text" id="subject" name="subject" oninput="showSubjectError();">
+					<span class="hint">Nos diga qual é o seu problema ou ideia.</span>
+					<span class="error">Não exceda 100 caracteres.</span>
+				</div>
+				
+				<div id="contentField">
+					<label for="content">Mensagem:</label>
+					<textarea id="content" name="content" oninput="showContentError();"></textarea>
+					<span class="hint">Escreva a sua mensagem, em até 250 caracteres.</span>
+					<span class="error">Reduza o número de letras ao permitido. Não exceda 250 caracteres.</span>
+				</div>
+				<button>Enviar mensagem</button>
+			</form>
+			
+			<div>
+				
+				
+				
+				<script type="text/javascript" src="8.4 - transicoes-na-galeria-de-fotos.js"></script>
+			</body>
+		</html>
+		

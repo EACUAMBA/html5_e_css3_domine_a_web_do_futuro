@@ -1,0 +1,133 @@
+.clearfix::before, .clearfix::after{
+	content: "";
+	display: table;
+}
+.clearfix::after{
+	clear: both;
+}
+.clearfix{
+	*zoom: 1;
+}
+
+
+#fotos ul{
+	list-style: none;
+	padding: 0;
+}
+
+#fotos li{
+	float: left;
+	margin-left: 10px;
+	position: relative;
+}
+
+#fotos span{
+	color: #153755;
+	display: block;
+	margin-top: 5px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Rotate(deg) e Scale(point)
+li:nth-child(odd){
+	transform: rotate(5deg);
+}
+
+li:nth-child(even){
+	transform: rotate(-5deg);
+}
+*/
+#fotos li:hover{
+	transform: scale(1.3);
+	z-index: 10;
+}
+
+/*Usando transition*/
+#fotos li{
+	transition: transform 0.2s linear;
+}
+
+/* Skew(deg, deg);
+li{
+	transform: skew(10deg, 10deg);
+}
+*/
+
+/* TranslateY podia ser X(pixel)
+li:nth-child(odd){
+	transform: translateY(10px);
+}
+
+li:nth-child(even){
+	transform: translateY(-10px);
+}
+*/
+
+
+/*Formulario*/
+
+#formulario label{
+	display: inline-block;
+	font-size: 0.9em;
+	width: 90px;
+	font-weight: bold;
+}
+
+#formulario input, textarea{
+	display: inline-block;
+	width: 200px;
+	
+	/*Mudando as bordas dos inputs e textarea*/
+	border: 1px solid #CCC;
+	box-shadow: inset 2px 2px 2px #EEE;
+	font-weight: 0.9em;
+	padding: 2px 9px;
+}
+
+#formulario textarea{
+	height: 100px;
+}
+#formulario div{
+	margin: 5px 0;
+}
+
+/*Dando vida a mensagem*/
+#formulario .hint{
+	background-color: #FFFBE4;
+	border-radius: 3px;
+	border: 1px solid #CCC;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+	opacity: 0.0;
+	font-size: 0.8em;
+	
+	padding: 3px;
+	
+	
+	/*
+	transition: opacity 0.5s, margin-left 0.5s;
+	*/
+	transition: all 0.5s;
+}
+
+
+/* Fazendo as mensagens desaparecerem conforme você diita no campo.
+	* O seletor "+"  lê se da segunte maneira: Coloque display: inline-block(no nosso caso) ao elemento .hint que esta logo apos omelemento input(ou text area ) com foco nele.
+*/
+#formulario input:focus + .hint, textarea:focus + .hint{
+	margin-left: 20px;
+	opacity: 1;
+}
+
+/*Dando vida ao erro*/
+#formulario .error{
+	color: red;
+	display: none;
+	margin: 6px 0 0 90px;
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+
+
+

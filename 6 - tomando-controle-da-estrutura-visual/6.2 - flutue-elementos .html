@@ -36,53 +36,65 @@
 			}
 			.met_your_mather img{
 			width=150px;
-				float: left;
-				margin-right: 10px;
+			float: left;
+			margin-right: 10px;
 			}
 			
 			/**/
 			.post{
-				width: 600px;
-				float: left;
+			width: 600px;
+			float: left;
 			}
 			
 			.post h1{
-				float: left;
-				margin: 0 0 20px;
+			float: left;
+			margin: 0 0 20px;
 			}
 			
 			.post .timestamp{
-				background-color: #000;
-				color: #fff;
-				margin-top: 10px;
-				padding: 5px 10px;
-				font-size: 0.9em;
-				float: right;
+			background-color: #000;
+			color: #fff;
+			margin-top: 10px;
+			padding: 5px 10px;
+			font-size: 0.9em;
+			float: right;
 			}
 			.post p{
-				clear: both;
+			clear: both;
 			}
 			.page aside{
-				float: right;
-				
-				background-color: #FFFBE4;
-				border: 1px solid #C9BC8F;
-				padding: 10px;
-				width: 200px;
+			float: right;
+			
+			background-color: #FFFBE4;
+			border: 1px solid #C9BC8F;
+			padding: 10px;
+			width: 200px;
 			}
 			
 			.page aside h3{
-				font-size: 0.9em;
-				margin: 0;
+			font-size: 0.9em;
+			margin: 0;
 			}
 			
 			.page{
-				margin: 0 auto;
-				padding: 10px;
-				width: 940px;
-				
-				background-color: #E8E8E8;
+			margin: 0 auto;
+			padding: 10px;
+			width: 940px;
+			
+			background-color: #E8E8E8;
 			}
+			
+			.clearfix::before, .clearfix::after{
+			content: "";
+			display: table;
+			}
+			.clearfix::after{
+			clear: both;
+			}
+			.clearfix{
+			*zoom: 1;
+			}
+			
 		</style>
 	</head>
 	<body>
@@ -106,7 +118,7 @@
 		<br>
 		
 		<div class="">
-		<div class="clear"></div>
+			<div class="clear"></div>
 			<div class="met_your_mather">
 				<img src="how-i-met-your-mather.png" alt="how-i-met-your-mather">
 				<p>
@@ -133,8 +145,8 @@
 		<hr>
 		<br>
 		<div class="clear"></div>
-		<div class="page">
-		
+		<div class="page clearfix">
+			
 			<section class="post">
 				<article>
 					<h1><a href="#">Título do post #1</a></h1>
@@ -151,14 +163,14 @@
 				</article>
 			</section>
 			<aside>
-					<h3>Veja também outros posts</h3>
-					<ol>
-						<li><a href="#" >Post #3</a></li>
-						<li><a href="#" >Post #4</a></li>
-						<li><a href="#" >Post #5</a></li>
-						<li><a href="#" >Post #6</a></li>
-					</ol>
-				</aside>
+				<h3>Veja também outros posts</h3>
+				<ol>
+					<li><a href="#" >Post #3</a></li>
+					<li><a href="#" >Post #4</a></li>
+					<li><a href="#" >Post #5</a></li>
+					<li><a href="#" >Post #6</a></li>
+				</ol>
+			</aside>
 		</div>
 		<div class="clear"></div>
 		<br><br>

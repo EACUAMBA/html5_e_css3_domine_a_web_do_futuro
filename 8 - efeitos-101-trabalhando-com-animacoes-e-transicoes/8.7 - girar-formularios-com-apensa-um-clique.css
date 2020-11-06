@@ -37,7 +37,7 @@ input{
 }
 
 .card section{
-	/*Parte traseira do formulario*/
+	/*Esconde a parte traseira do formulario*/
 	backface-visibility: hidden;
 	
 	background-color: #FFF;
@@ -45,7 +45,7 @@ input{
 	position: absolute;
 }
 
-/* Fazendo o formulario girar */
+/* Fazendo o formulario de cadastro girar*/
 .signup{
 	transform: rotateY(180deg);
 }
